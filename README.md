@@ -5,9 +5,9 @@ This code is the implementation of the algorithms and experiments in our paper "
 ### Introduction
 This code can be run in Matlab R2023b and Gurobi 11.0.0. 
 
-In order to run the comparison experiment properly, since its code is written in Python, we recommend referring to `comexp/README.md'.
+In order to run the comparison experiment properly, since its code is written in Python, we recommend referring to `comexp/README.md`.
 
-* `coefficients_generating.m`: the code for generating the weights $`a_n`$ and $`b_n`$ in our paper.
+* `coefficients_generating.m`: the code for generating the weights $a_i$ and $b_i$ in our paper.
 * `ADMM_CPT_solver.m`: the code for Algorithm 1 in our paper.
 * `PAV_solver.m`,`PAV.m`,`find_minimizer.m`,`bisectionMethod.m`: the code for Algorithm 4 in our paper.
 * `dynamic_programming.m`,`Block.m`,`back_tracking.m`,`merge.m`: the code for Algorithm 3 in our paper.
