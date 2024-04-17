@@ -1,0 +1,62 @@
+admm_ob=0.406573
+##################################################
+############## Starting MMOptimizer ##############
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.393, true_ob=0.403, relative error: -0.024
+################## iteration 1 ###################
+ob_heuristic=0.404, true_ob=0.405, relative error: -0.003
+################## iteration 2 ###################
+ob_heuristic=0.406, true_ob=0.406, relative error: -0.001
+################## iteration 3 ###################
+ob_heuristic=0.406, true_ob=0.406, relative error: -0.000
+final utility: 0.407
+
+
+mm_ob=0.406491  mm_time=198.591633
+##################################################
+######## Starting ConvexConcaveOptimizer #########
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.394, true_ob=0.405, relative error: -0.025
+################## iteration 1 ###################
+ob_heuristic=0.406, true_ob=0.406, relative error: -0.001
+################## iteration 2 ###################
+ob_heuristic=0.406, true_ob=0.406, relative error: -0.000
+final utility: 0.407
+
+
+cc_ob=0.406497  cc_time=0.791573
+##################################################
+########### Starting GradientOptimizer ###########
+##################################################
+
+
+################## iteration 0 ###################
+best utility: 0.379
+################ iteration 10000 #################
+best utility: 0.406
+################ iteration 20000 #################
+best utility: 0.406
+################ iteration 30000 #################
+best utility: 0.406
+################ iteration 40000 #################
+best utility: 0.406
+################ iteration 50000 #################
+best utility: 0.406
+################ iteration 60000 #################
+best utility: 0.406
+################ iteration 70000 #################
+best utility: 0.406
+################ iteration 80000 #################
+best utility: 0.406
+################ iteration 90000 #################
+best utility: 0.407
+final utility: 0.407
+
+
+ga_ob=0.406509  ga_time=190.531130

@@ -1,0 +1,970 @@
+==============      daily_used      ==============
+========      period=50      ========
+admm_ob=0.019539
+##################################################
+############## Starting MMOptimizer ##############
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.011, true_ob=0.012, relative error: -0.079
+################## iteration 1 ###################
+ob_heuristic=0.013, true_ob=0.014, relative error: -0.074
+################## iteration 2 ###################
+ob_heuristic=0.015, true_ob=0.016, relative error: -0.085
+################## iteration 3 ###################
+ob_heuristic=0.018, true_ob=0.019, relative error: -0.053
+################## iteration 4 ###################
+ob_heuristic=0.019, true_ob=0.019, relative error: -0.018
+final utility: 0.020
+
+
+mm_ob=0.019459  mm_time=5.888606
+##################################################
+######## Starting ConvexConcaveOptimizer #########
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.014, true_ob=0.015, relative error: -0.092
+################## iteration 1 ###################
+ob_heuristic=0.019, true_ob=0.020, relative error: -0.046
+The cc method failed!
+##################################################
+########### Starting GradientOptimizer ###########
+##################################################
+
+
+################## iteration 0 ###################
+best utility: 0.002
+################ iteration 10000 #################
+best utility: 0.003
+################ iteration 20000 #################
+best utility: 0.004
+################ iteration 30000 #################
+best utility: 0.007
+################ iteration 40000 #################
+best utility: 0.017
+################ iteration 50000 #################
+best utility: 0.019
+################ iteration 60000 #################
+best utility: 0.019
+################ iteration 70000 #################
+best utility: 0.019
+################ iteration 80000 #################
+best utility: 0.019
+################ iteration 90000 #################
+best utility: 0.019
+final utility: 0.019
+
+
+ga_ob=0.019383  ga_time=182.939671
+========      period=100      ========
+admm_ob=0.010296
+##################################################
+############## Starting MMOptimizer ##############
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.007, true_ob=0.009, relative error: -0.229
+################## iteration 1 ###################
+ob_heuristic=0.009, true_ob=0.010, relative error: -0.053
+################## iteration 2 ###################
+ob_heuristic=0.010, true_ob=0.010, relative error: -0.018
+################## iteration 3 ###################
+ob_heuristic=0.010, true_ob=0.010, relative error: -0.005
+final utility: 0.010
+
+
+mm_ob=0.010134  mm_time=20.321401
+##################################################
+######## Starting ConvexConcaveOptimizer #########
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.009, true_ob=0.010, relative error: -0.061
+################## iteration 1 ###################
+ob_heuristic=0.010, true_ob=0.010, relative error: -0.008
+final utility: 0.010
+
+
+cc_ob=0.010277  cc_time=1.058081
+##################################################
+########### Starting GradientOptimizer ###########
+##################################################
+
+
+################## iteration 0 ###################
+best utility: -0.001
+################ iteration 10000 #################
+best utility: 0.001
+################ iteration 20000 #################
+best utility: 0.002
+################ iteration 30000 #################
+best utility: 0.003
+################ iteration 40000 #################
+best utility: 0.005
+################ iteration 50000 #################
+best utility: 0.007
+################ iteration 60000 #################
+best utility: 0.007
+################ iteration 70000 #################
+best utility: 0.007
+################ iteration 80000 #################
+best utility: 0.007
+################ iteration 90000 #################
+best utility: 0.008
+final utility: 0.008
+
+
+ga_ob=0.007943  ga_time=185.102373
+========      period=150      ========
+admm_ob=0.008452
+##################################################
+############## Starting MMOptimizer ##############
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.004, true_ob=0.006, relative error: -0.332
+################## iteration 1 ###################
+ob_heuristic=0.007, true_ob=0.007, relative error: -0.069
+################## iteration 2 ###################
+ob_heuristic=0.008, true_ob=0.008, relative error: -0.056
+################## iteration 3 ###################
+ob_heuristic=0.008, true_ob=0.008, relative error: -0.015
+final utility: 0.008
+
+
+mm_ob=0.008367  mm_time=63.250419
+##################################################
+######## Starting ConvexConcaveOptimizer #########
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.008, true_ob=0.008, relative error: -0.092
+################## iteration 1 ###################
+ob_heuristic=0.008, true_ob=0.008, relative error: -0.001
+final utility: 0.008
+
+
+cc_ob=0.008456  cc_time=1.398198
+##################################################
+########### Starting GradientOptimizer ###########
+##################################################
+
+
+################## iteration 0 ###################
+best utility: -0.001
+################ iteration 10000 #################
+best utility: -0.000
+################ iteration 20000 #################
+best utility: 0.000
+################ iteration 30000 #################
+best utility: 0.001
+################ iteration 40000 #################
+best utility: 0.002
+################ iteration 50000 #################
+best utility: 0.004
+################ iteration 60000 #################
+best utility: 0.005
+################ iteration 70000 #################
+best utility: 0.005
+################ iteration 80000 #################
+best utility: 0.006
+################ iteration 90000 #################
+best utility: 0.007
+final utility: 0.007
+
+
+ga_ob=0.007267  ga_time=190.908038
+========      period=200      ========
+admm_ob=0.004594
+##################################################
+############## Starting MMOptimizer ##############
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.002, true_ob=0.004, relative error: -0.362
+################## iteration 1 ###################
+ob_heuristic=0.004, true_ob=0.004, relative error: -0.060
+################## iteration 2 ###################
+ob_heuristic=0.004, true_ob=0.005, relative error: -0.014
+################## iteration 3 ###################
+ob_heuristic=0.005, true_ob=0.005, relative error: -0.013
+################## iteration 4 ###################
+ob_heuristic=0.005, true_ob=0.005, relative error: -0.043
+################## iteration 5 ###################
+ob_heuristic=0.005, true_ob=0.005, relative error: -0.011
+################## iteration 6 ###################
+ob_heuristic=0.005, true_ob=0.005, relative error: -0.043
+################## iteration 7 ###################
+ob_heuristic=0.006, true_ob=0.006, relative error: -0.033
+################## iteration 8 ###################
+ob_heuristic=0.006, true_ob=0.006, relative error: -0.015
+final utility: 0.006
+
+
+mm_ob=0.006028  mm_time=182.449026
+##################################################
+######## Starting ConvexConcaveOptimizer #########
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.005, true_ob=0.005, relative error: 0.011
+final utility: 0.005
+
+
+cc_ob=0.004604  cc_time=1.477168
+##################################################
+########### Starting GradientOptimizer ###########
+##################################################
+
+
+################## iteration 0 ###################
+best utility: -0.001
+################ iteration 10000 #################
+best utility: -0.001
+################ iteration 20000 #################
+best utility: -0.000
+################ iteration 30000 #################
+best utility: -0.000
+################ iteration 40000 #################
+best utility: 0.000
+################ iteration 50000 #################
+best utility: 0.001
+################ iteration 60000 #################
+best utility: 0.001
+################ iteration 70000 #################
+best utility: 0.002
+################ iteration 80000 #################
+best utility: 0.002
+################ iteration 90000 #################
+best utility: 0.002
+final utility: 0.003
+
+
+ga_ob=0.002548  ga_time=195.210450
+========      period=250      ========
+admm_ob=0.004869
+##################################################
+############## Starting MMOptimizer ##############
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.003, true_ob=0.004, relative error: -0.275
+################## iteration 1 ###################
+ob_heuristic=0.005, true_ob=0.005, relative error: -0.022
+final utility: 0.005
+
+
+mm_ob=0.004742  mm_time=100.114449
+##################################################
+######## Starting ConvexConcaveOptimizer #########
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.005, true_ob=0.005, relative error: 0.026
+final utility: 0.005
+
+
+cc_ob=0.004724  cc_time=1.781012
+##################################################
+########### Starting GradientOptimizer ###########
+##################################################
+
+
+################## iteration 0 ###################
+best utility: -0.000
+################ iteration 10000 #################
+best utility: 0.000
+################ iteration 20000 #################
+best utility: 0.001
+################ iteration 30000 #################
+best utility: 0.001
+################ iteration 40000 #################
+best utility: 0.001
+################ iteration 50000 #################
+best utility: 0.002
+################ iteration 60000 #################
+best utility: 0.002
+################ iteration 70000 #################
+best utility: 0.002
+################ iteration 80000 #################
+best utility: 0.002
+################ iteration 90000 #################
+best utility: 0.002
+final utility: 0.003
+
+
+ga_ob=0.002704  ga_time=200.137635
+========      period=300      ========
+admm_ob=0.003726
+##################################################
+############## Starting MMOptimizer ##############
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.000, true_ob=0.001, relative error: -0.950
+################## iteration 1 ###################
+ob_heuristic=0.002, true_ob=0.002, relative error: -0.128
+################## iteration 2 ###################
+ob_heuristic=0.002, true_ob=0.003, relative error: -0.065
+################## iteration 3 ###################
+ob_heuristic=0.003, true_ob=0.003, relative error: -0.045
+################## iteration 4 ###################
+ob_heuristic=0.003, true_ob=0.003, relative error: -0.035
+################## iteration 5 ###################
+ob_heuristic=0.003, true_ob=0.003, relative error: -0.022
+################## iteration 6 ###################
+ob_heuristic=0.003, true_ob=0.004, relative error: -0.014
+################## iteration 7 ###################
+ob_heuristic=0.004, true_ob=0.004, relative error: -0.020
+final utility: 0.004
+
+
+mm_ob=0.003663  mm_time=739.941729
+##################################################
+######## Starting ConvexConcaveOptimizer #########
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.003, true_ob=0.003, relative error: -0.136
+################## iteration 1 ###################
+ob_heuristic=0.004, true_ob=0.004, relative error: -0.028
+final utility: 0.004
+
+
+cc_ob=0.003714  cc_time=2.194744
+##################################################
+########### Starting GradientOptimizer ###########
+##################################################
+
+
+################## iteration 0 ###################
+best utility: -0.003
+################ iteration 10000 #################
+best utility: -0.002
+################ iteration 20000 #################
+best utility: -0.002
+################ iteration 30000 #################
+best utility: -0.002
+################ iteration 40000 #################
+best utility: -0.001
+################ iteration 50000 #################
+best utility: -0.001
+################ iteration 60000 #################
+best utility: -0.001
+################ iteration 70000 #################
+best utility: -0.000
+################ iteration 80000 #################
+best utility: 0.001
+################ iteration 90000 #################
+best utility: 0.002
+final utility: 0.003
+
+
+ga_ob=0.002584  ga_time=204.581256
+==============      SP500_2      ==============
+========      period=300      ========
+admm_ob=0.018378
+##################################################
+############## Starting MMOptimizer ##############
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.007, true_ob=0.009, relative error: -0.251
+################## iteration 1 ###################
+ob_heuristic=0.011, true_ob=0.012, relative error: -0.069
+################## iteration 2 ###################
+ob_heuristic=0.012, true_ob=0.013, relative error: -0.046
+################## iteration 3 ###################
+ob_heuristic=0.013, true_ob=0.014, relative error: -0.037
+################## iteration 4 ###################
+ob_heuristic=0.014, true_ob=0.015, relative error: -0.031
+################## iteration 5 ###################
+ob_heuristic=0.015, true_ob=0.016, relative error: -0.028
+################## iteration 6 ###################
+ob_heuristic=0.016, true_ob=0.016, relative error: -0.025
+################## iteration 7 ###################
+ob_heuristic=0.017, true_ob=0.018, relative error: -0.033
+################## iteration 8 ###################
+ob_heuristic=0.018, true_ob=0.018, relative error: -0.012
+################## iteration 9 ###################
+ob_heuristic=0.018, true_ob=0.018, relative error: -0.003
+################## iteration 10 ##################
+ob_heuristic=0.018, true_ob=0.018, relative error: -0.007
+final utility: 0.018
+
+
+mm_ob=0.018360  mm_time=1370.049907
+##################################################
+######## Starting ConvexConcaveOptimizer #########
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.013, true_ob=0.014, relative error: -0.063
+################## iteration 1 ###################
+ob_heuristic=0.014, true_ob=0.015, relative error: -0.052
+################## iteration 2 ###################
+ob_heuristic=0.016, true_ob=0.016, relative error: -0.042
+################## iteration 3 ###################
+ob_heuristic=0.018, true_ob=0.018, relative error: -0.037
+################## iteration 4 ###################
+ob_heuristic=0.018, true_ob=0.018, relative error: 0.000
+The cc method failed!
+##################################################
+########### Starting GradientOptimizer ###########
+##################################################
+
+
+################## iteration 0 ###################
+best utility: -0.006
+################ iteration 10000 #################
+best utility: -0.006
+################ iteration 20000 #################
+best utility: -0.005
+################ iteration 30000 #################
+best utility: -0.005
+################ iteration 40000 #################
+best utility: -0.005
+################ iteration 50000 #################
+best utility: -0.005
+################ iteration 60000 #################
+best utility: -0.005
+################ iteration 70000 #################
+best utility: -0.005
+################ iteration 80000 #################
+best utility: -0.005
+################ iteration 90000 #################
+best utility: -0.004
+final utility: -0.004
+
+
+ga_ob=-0.004269  ga_time=209.932073
+========      period=400      ========
+admm_ob=0.016770
+##################################################
+############## Starting MMOptimizer ##############
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.006, true_ob=0.008, relative error: -0.272
+################## iteration 1 ###################
+ob_heuristic=0.009, true_ob=0.010, relative error: -0.105
+################## iteration 2 ###################
+ob_heuristic=0.011, true_ob=0.012, relative error: -0.056
+################## iteration 3 ###################
+ob_heuristic=0.012, true_ob=0.013, relative error: -0.033
+################## iteration 4 ###################
+ob_heuristic=0.013, true_ob=0.013, relative error: -0.031
+################## iteration 5 ###################
+ob_heuristic=0.014, true_ob=0.014, relative error: -0.038
+################## iteration 6 ###################
+ob_heuristic=0.015, true_ob=0.015, relative error: -0.034
+################## iteration 7 ###################
+ob_heuristic=0.016, true_ob=0.016, relative error: -0.019
+################## iteration 8 ###################
+ob_heuristic=0.016, true_ob=0.016, relative error: -0.008
+################## iteration 9 ###################
+ob_heuristic=0.016, true_ob=0.016, relative error: -0.005
+################## iteration 10 ##################
+ob_heuristic=0.017, true_ob=0.017, relative error: -0.004
+final utility: 0.017
+
+
+mm_ob=0.016619  mm_time=1859.685536
+##################################################
+######## Starting ConvexConcaveOptimizer #########
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.011, true_ob=0.012, relative error: -0.072
+################## iteration 1 ###################
+ob_heuristic=0.013, true_ob=0.014, relative error: -0.081
+################## iteration 2 ###################
+ob_heuristic=0.015, true_ob=0.016, relative error: -0.062
+################## iteration 3 ###################
+ob_heuristic=0.017, true_ob=0.017, relative error: -0.005
+The cc method failed!
+##################################################
+########### Starting GradientOptimizer ###########
+##################################################
+
+
+################## iteration 0 ###################
+best utility: -0.004
+################ iteration 10000 #################
+best utility: -0.004
+################ iteration 20000 #################
+best utility: -0.004
+################ iteration 30000 #################
+best utility: -0.004
+################ iteration 40000 #################
+best utility: -0.004
+################ iteration 50000 #################
+best utility: -0.004
+################ iteration 60000 #################
+best utility: -0.004
+################ iteration 70000 #################
+best utility: -0.004
+################ iteration 80000 #################
+best utility: -0.004
+################ iteration 90000 #################
+best utility: -0.004
+final utility: -0.003
+
+
+ga_ob=-0.003469  ga_time=218.598120
+========      period=500      ========
+admm_ob=0.010432
+##################################################
+############## Starting MMOptimizer ##############
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.000, true_ob=0.002, relative error: -0.913
+################## iteration 1 ###################
+ob_heuristic=0.003, true_ob=0.004, relative error: -0.177
+################## iteration 2 ###################
+ob_heuristic=0.005, true_ob=0.006, relative error: -0.132
+################## iteration 3 ###################
+ob_heuristic=0.006, true_ob=0.007, relative error: -0.111
+################## iteration 4 ###################
+ob_heuristic=0.008, true_ob=0.008, relative error: -0.054
+################## iteration 5 ###################
+ob_heuristic=0.008, true_ob=0.009, relative error: -0.085
+################## iteration 6 ###################
+ob_heuristic=0.009, true_ob=0.010, relative error: -0.029
+################## iteration 7 ###################
+ob_heuristic=0.010, true_ob=0.010, relative error: -0.013
+################## iteration 8 ###################
+ob_heuristic=0.010, true_ob=0.010, relative error: -0.011
+final utility: 0.010
+
+
+mm_ob=0.010333  mm_time=3692.694092
+##################################################
+######## Starting ConvexConcaveOptimizer #########
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.004, true_ob=0.006, relative error: -0.388
+################## iteration 1 ###################
+ob_heuristic=0.008, true_ob=0.009, relative error: -0.094
+################## iteration 2 ###################
+ob_heuristic=0.010, true_ob=0.010, relative error: -0.041
+################## iteration 3 ###################
+ob_heuristic=0.010, true_ob=0.010, relative error: -0.011
+final utility: 0.010
+
+
+cc_ob=0.010388  cc_time=98.108940
+##################################################
+########### Starting GradientOptimizer ###########
+##################################################
+
+
+################## iteration 0 ###################
+best utility: -0.010
+################ iteration 10000 #################
+best utility: -0.010
+################ iteration 20000 #################
+best utility: -0.010
+################ iteration 30000 #################
+best utility: -0.010
+################ iteration 40000 #################
+best utility: -0.010
+################ iteration 50000 #################
+best utility: -0.009
+################ iteration 60000 #################
+best utility: -0.009
+################ iteration 70000 #################
+best utility: -0.009
+################ iteration 80000 #################
+best utility: -0.009
+################ iteration 90000 #################
+best utility: -0.009
+final utility: -0.009
+
+
+ga_ob=-0.008810  ga_time=228.793290
+========      period=600      ========
+admm_ob=0.004348
+##################################################
+############## Starting MMOptimizer ##############
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=-0.001, true_ob=0.001, relative error: -1.417
+################## iteration 1 ###################
+ob_heuristic=0.002, true_ob=0.002, relative error: -0.126
+################## iteration 2 ###################
+ob_heuristic=0.003, true_ob=0.003, relative error: -0.069
+################## iteration 3 ###################
+ob_heuristic=0.003, true_ob=0.003, relative error: -0.029
+################## iteration 4 ###################
+ob_heuristic=0.003, true_ob=0.003, relative error: -0.045
+################## iteration 5 ###################
+ob_heuristic=0.003, true_ob=0.004, relative error: -0.044
+################## iteration 6 ###################
+ob_heuristic=0.004, true_ob=0.004, relative error: -0.014
+final utility: 0.004
+
+
+mm_ob=0.003679  mm_time=2807.911717
+##################################################
+######## Starting ConvexConcaveOptimizer #########
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.002, true_ob=0.003, relative error: -0.372
+################## iteration 1 ###################
+ob_heuristic=0.003, true_ob=0.004, relative error: -0.081
+################## iteration 2 ###################
+ob_heuristic=0.004, true_ob=0.004, relative error: -0.026
+################## iteration 3 ###################
+ob_heuristic=0.004, true_ob=0.004, relative error: -0.021
+final utility: 0.004
+
+
+cc_ob=0.004148  cc_time=101.470018
+##################################################
+########### Starting GradientOptimizer ###########
+##################################################
+
+
+################## iteration 0 ###################
+best utility: -0.009
+################ iteration 10000 #################
+best utility: -0.009
+################ iteration 20000 #################
+best utility: -0.009
+################ iteration 30000 #################
+best utility: -0.009
+################ iteration 40000 #################
+best utility: -0.009
+################ iteration 50000 #################
+best utility: -0.009
+################ iteration 60000 #################
+best utility: -0.009
+################ iteration 70000 #################
+best utility: -0.009
+################ iteration 80000 #################
+best utility: -0.009
+################ iteration 90000 #################
+best utility: -0.009
+final utility: -0.009
+
+
+ga_ob=-0.008575  ga_time=238.465769
+========      period=700      ========
+admm_ob=0.005024
+##################################################
+############## Starting MMOptimizer ##############
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=-0.001, true_ob=0.001, relative error: -2.229
+################## iteration 1 ###################
+ob_heuristic=0.002, true_ob=0.002, relative error: -0.226
+################## iteration 2 ###################
+ob_heuristic=0.002, true_ob=0.003, relative error: -0.084
+################## iteration 3 ###################
+ob_heuristic=0.003, true_ob=0.003, relative error: -0.079
+################## iteration 4 ###################
+ob_heuristic=0.003, true_ob=0.004, relative error: -0.070
+################## iteration 5 ###################
+ob_heuristic=0.004, true_ob=0.004, relative error: -0.039
+################## iteration 6 ###################
+ob_heuristic=0.004, true_ob=0.004, relative error: -0.019
+################## iteration 7 ###################
+ob_heuristic=0.004, true_ob=0.004, relative error: -0.025
+################## iteration 8 ###################
+ob_heuristic=0.004, true_ob=0.004, relative error: -0.016
+################## iteration 9 ###################
+ob_heuristic=0.005, true_ob=0.005, relative error: -0.016
+################## iteration 10 ##################
+ob_heuristic=0.005, true_ob=0.005, relative error: -0.011
+final utility: 0.005
+
+
+mm_ob=0.004755  mm_time=11590.159517
+##################################################
+######## Starting ConvexConcaveOptimizer #########
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.002, true_ob=0.003, relative error: -0.433
+################## iteration 1 ###################
+ob_heuristic=0.004, true_ob=0.004, relative error: -0.067
+################## iteration 2 ###################
+ob_heuristic=0.004, true_ob=0.005, relative error: -0.041
+################## iteration 3 ###################
+ob_heuristic=0.005, true_ob=0.005, relative error: -0.023
+################## iteration 4 ###################
+ob_heuristic=0.005, true_ob=0.005, relative error: -0.017
+final utility: 0.005
+
+
+cc_ob=0.005008  cc_time=125.048615
+##################################################
+########### Starting GradientOptimizer ###########
+##################################################
+
+
+################## iteration 0 ###################
+best utility: -0.009
+################ iteration 10000 #################
+best utility: -0.009
+################ iteration 20000 #################
+best utility: -0.009
+################ iteration 30000 #################
+best utility: -0.009
+################ iteration 40000 #################
+best utility: -0.009
+################ iteration 50000 #################
+best utility: -0.009
+################ iteration 60000 #################
+best utility: -0.009
+################ iteration 70000 #################
+best utility: -0.009
+################ iteration 80000 #################
+best utility: -0.009
+################ iteration 90000 #################
+best utility: -0.009
+final utility: -0.009
+
+
+ga_ob=-0.008520  ga_time=247.281732
+========      period=800      ========
+admm_ob=0.003358
+##################################################
+############## Starting MMOptimizer ##############
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=-0.002, true_ob=-0.000, relative error: 7.580
+################## iteration 1 ###################
+ob_heuristic=0.000, true_ob=0.001, relative error: -0.557
+################## iteration 2 ###################
+ob_heuristic=0.001, true_ob=0.002, relative error: -0.216
+################## iteration 3 ###################
+ob_heuristic=0.002, true_ob=0.002, relative error: -0.136
+################## iteration 4 ###################
+ob_heuristic=0.002, true_ob=0.002, relative error: -0.063
+################## iteration 5 ###################
+ob_heuristic=0.003, true_ob=0.003, relative error: -0.052
+################## iteration 6 ###################
+ob_heuristic=0.003, true_ob=0.003, relative error: -0.026
+################## iteration 7 ###################
+ob_heuristic=0.003, true_ob=0.003, relative error: -0.022
+final utility: 0.003
+
+
+mm_ob=0.003099  mm_time=7388.513823
+##################################################
+######## Starting ConvexConcaveOptimizer #########
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.000, true_ob=0.002, relative error: -0.807
+################## iteration 1 ###################
+ob_heuristic=0.002, true_ob=0.003, relative error: -0.170
+################## iteration 2 ###################
+ob_heuristic=0.003, true_ob=0.003, relative error: -0.021
+The cc method failed!
+##################################################
+########### Starting GradientOptimizer ###########
+##################################################
+
+
+################## iteration 0 ###################
+best utility: -0.008
+################ iteration 10000 #################
+best utility: -0.008
+################ iteration 20000 #################
+best utility: -0.008
+################ iteration 30000 #################
+best utility: -0.008
+################ iteration 40000 #################
+best utility: -0.008
+################ iteration 50000 #################
+best utility: -0.008
+################ iteration 60000 #################
+best utility: -0.008
+################ iteration 70000 #################
+best utility: -0.008
+################ iteration 80000 #################
+best utility: -0.008
+################ iteration 90000 #################
+best utility: -0.008
+final utility: -0.008
+
+
+ga_ob=-0.007738  ga_time=259.463741
+========      period=900      ========
+admm_ob=0.003595
+##################################################
+############## Starting MMOptimizer ##############
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=-0.002, true_ob=-0.000, relative error: 11.705
+################## iteration 1 ###################
+ob_heuristic=0.000, true_ob=0.001, relative error: -0.504
+################## iteration 2 ###################
+ob_heuristic=0.001, true_ob=0.002, relative error: -0.226
+################## iteration 3 ###################
+ob_heuristic=0.002, true_ob=0.002, relative error: -0.125
+################## iteration 4 ###################
+ob_heuristic=0.003, true_ob=0.003, relative error: -0.089
+################## iteration 5 ###################
+ob_heuristic=0.003, true_ob=0.003, relative error: -0.039
+################## iteration 6 ###################
+ob_heuristic=0.003, true_ob=0.003, relative error: -0.025
+final utility: 0.003
+
+
+mm_ob=0.003340  mm_time=10380.244596
+##################################################
+######## Starting ConvexConcaveOptimizer #########
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.000, true_ob=0.002, relative error: -0.776
+################## iteration 1 ###################
+ob_heuristic=0.003, true_ob=0.003, relative error: -0.189
+################## iteration 2 ###################
+ob_heuristic=0.003, true_ob=0.004, relative error: -0.024
+final utility: 0.004
+
+
+cc_ob=0.003561  cc_time=150.560969
+##################################################
+########### Starting GradientOptimizer ###########
+##################################################
+
+
+################## iteration 0 ###################
+best utility: -0.007
+################ iteration 10000 #################
+best utility: -0.007
+################ iteration 20000 #################
+best utility: -0.007
+################ iteration 30000 #################
+best utility: -0.007
+################ iteration 40000 #################
+best utility: -0.007
+################ iteration 50000 #################
+best utility: -0.007
+################ iteration 60000 #################
+best utility: -0.007
+################ iteration 70000 #################
+best utility: -0.007
+################ iteration 80000 #################
+best utility: -0.007
+################ iteration 90000 #################
+best utility: -0.007
+final utility: -0.007
+
+
+ga_ob=-0.006678  ga_time=269.037301
+========      period=1000      ========
+admm_ob=0.003341
+##################################################
+############## Starting MMOptimizer ##############
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=-0.002, true_ob=-0.000, relative error: 4.034
+################## iteration 1 ###################
+ob_heuristic=0.000, true_ob=0.001, relative error: -0.697
+################## iteration 2 ###################
+ob_heuristic=0.001, true_ob=0.002, relative error: -0.280
+################## iteration 3 ###################
+ob_heuristic=0.002, true_ob=0.002, relative error: -0.110
+################## iteration 4 ###################
+ob_heuristic=0.002, true_ob=0.002, relative error: -0.051
+################## iteration 5 ###################
+ob_heuristic=0.003, true_ob=0.003, relative error: -0.039
+################## iteration 6 ###################
+ob_heuristic=0.003, true_ob=0.003, relative error: -0.016
+################## iteration 7 ###################
+ob_heuristic=0.003, true_ob=0.003, relative error: -0.015
+################## iteration 8 ###################
+ob_heuristic=0.003, true_ob=0.003, relative error: -0.018
+final utility: 0.003
+
+
+mm_ob=0.003014  mm_time=18930.044397
+##################################################
+######## Starting ConvexConcaveOptimizer #########
+##################################################
+
+
+################## iteration 0 ###################
+ob_heuristic=0.000, true_ob=0.002, relative error: -0.810
+################## iteration 1 ###################
+ob_heuristic=0.002, true_ob=0.003, relative error: -0.141
+################## iteration 2 ###################
+ob_heuristic=0.003, true_ob=0.003, relative error: -0.047
+################## iteration 3 ###################
+ob_heuristic=0.003, true_ob=0.003, relative error: -0.013
+final utility: 0.003
+
+
+cc_ob=0.003418  cc_time=179.288553
+##################################################
+########### Starting GradientOptimizer ###########
+##################################################
+
+
+################## iteration 0 ###################
+best utility: -0.007
+################ iteration 10000 #################
+best utility: -0.007
+################ iteration 20000 #################
+best utility: -0.007
+################ iteration 30000 #################
+best utility: -0.007
+################ iteration 40000 #################
+best utility: -0.007
+################ iteration 50000 #################
+best utility: -0.007
+################ iteration 60000 #################
+best utility: -0.007
+################ iteration 70000 #################
+best utility: -0.007
+################ iteration 80000 #################
+best utility: -0.007
+################ iteration 90000 #################
+best utility: -0.007
+final utility: -0.007
+
+
+ga_ob=-0.006613  ga_time=278.543868
