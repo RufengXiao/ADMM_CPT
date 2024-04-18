@@ -110,8 +110,7 @@ function [ynext,isbetter] = ysubproblem(x,y,R,lagrangian,sigma,an,bn,args)
        reshape(sorted_wn,1,N);
        ypre = sort(y);
        if args.method_num == 1
-           [Hs,Hs2] = dynamic_programming(an,bn,sorted_wn,sigma,args);
-           ysub = back_tracking(Hs,Hs2);
+           ysub = dynamic_programming(an,bn,sorted_wn,sigma,args);
            ysub = ysub';
        else
            ysub = PAV_solver(an,bn,sorted_wn,args,sigma);

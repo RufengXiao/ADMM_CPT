@@ -46,7 +46,7 @@ for dataset = 1:2
     end
 
 
-    for method_num = 2:2
+    for method_num = 1:2
         args.method_num = method_num;
         total_iter = zeros(expe_num,1);
         objvalue = zeros(expe_num,1);
@@ -105,7 +105,7 @@ for dataset = 1:2
         fmincon_objvalue(i) = res;
         fmincon_times(i) = etime(t2,t1);
     end 
-    save_dir = sprintf('./res/fmincon_%d_PAV.mat',name);
+    save_dir = sprintf('./res/fmincon_%d.mat',name);
     save(save_dir,'fmincon_objvalue','fmincon_times');
 
     for i = 1:expe_num

@@ -9,8 +9,9 @@ In order to run the comparison experiment properly, since its code is written in
 
 * `coefficients_generating.m`: the code for generating the weights $a_i$ and $b_i$ in our paper.
 * `ADMM_CPT_solver.m`: the code for Algorithm 1 in our paper.
-* `PAV_solver.m`,`PAV.m`,`find_minimizer.m`,`bisectionMethod.m`: the code for Algorithm 4 in our paper.
-* `dynamic_programming.m`,`Block.m`,`back_tracking.m`,`merge.m`: the code for Algorithm 3 in our paper.
+* `dynamic_programming.m`,: the code for Algorithm 2 and 3 in our paper.
+* `PAV_solver.m`,`PAV.m`,`find_minimizer.m`: the code for Algorithm 4 in our paper.
+* `bisectionMethod.m`: the code for finding the root of a function by using binary search.
 * `res_w`: Store the results generated from the section "Numerical Tests for Comparison with Luxenberg et al. (2024)". Then transfer these in the `compexp\res_w` folder for comparison purposes.
 
 ### How to get the results
