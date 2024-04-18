@@ -11,12 +11,13 @@ In order to run the comparison experiment properly, since its code is written in
 * `ADMM_CPT_solver.m`: the code for Algorithm 1 in our paper.
 * `PAV_solver.m`,`PAV.m`,`find_minimizer.m`,`bisectionMethod.m`: the code for Algorithm 4 in our paper.
 * `dynamic_programming.m`,`Block.m`,`back_tracking.m`,`merge.m`: the code for Algorithm 3 in our paper.
+* `res_w`: Store the results generated from the section "Numerical Tests for Comparison with Luxenberg et al. (2024)". Then transfer these in the `compexp\res_w` folder for comparison purposes.
 
 ### How to get the results
-* To get the results of the chapter "Numerical Tests for the y-subproblem Solvers" in our paper, please run `run5_1.m`
-* To get the results of the chapter "Numerical Tests for the ADMM Algorithms" in our paper, please run `run5_2.m`
-* To get the results of the chapter "Numerical Tests for Comparison with Luxenberg et al. (2024)" in our paper, please run `run5_3.m` and `compexp/run5_3.py`
-* To get the results of the chapter "Empirical Study" in our paper, please run `run5_4.m`
+* To get the results of the section "Numerical Tests for the y-subproblem Solvers" in our paper, please run `run5_1.m`. The results obtained will be stored in the `res` folder.
+* To get the results of the section "Numerical Tests for the ADMM Algorithms" in our paper, please run `run5_2.m`. The results obtained will be stored in the `res` folder.
+* To get the results of the section "Numerical Tests for Comparison with Luxenberg et al. (2024)" in our paper, please run `run5_3.m` and `compexp/run5_3.py`. The results obtained will be stored in the `res` folder and `compexp/result` folder.
+* To get the results of the section "Empirical Study" in our paper, please run `run5_4.m`. The results obtained will be stored in the `res` folder. Please transfer the five results from `Empirical_xxxx.mat` into the `plot` folder. Subsequently, executing `plot/plot_table.py` will generate the figure and table presented in Appendix D of our paper.
 
 ### Citation
 If you found the provided code useful, please cite our work.
