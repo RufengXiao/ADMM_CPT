@@ -14,12 +14,12 @@ for itr = 1:1000
     itr
     period = 250;
     invest_idx = period + itr;
-    
+
     R = ret(invest_idx-period:invest_idx-1,:)./100;
     R_next = ret(invest_idx,:)./100;
     R = R(:,1:48);
     R_next = R_next(1:48);
-    
+
     args.lamda = 2.25;
     args.B = 0;
     args.alpha = 0.88;
@@ -35,7 +35,7 @@ save('./res/Empirical_benchmark_daily.mat','xopt_array','rtns');
 rtns = zeros(1000,1);
 xopt_array = zeros(48,1000);
 for itr = 1:1000
-    disp('large reference point')
+    disp('risk-free reference point')
     itr
     period = 250;
     invest_idx = period + itr;
@@ -45,6 +45,31 @@ for itr = 1:1000
     R = R(:,1:48);
     R_next = R_next(1:48);
     
+    args.lamda = 2.25;
+    args.B = 0.000041;
+    args.alpha = 0.88;
+    args.max_iter = 1000;
+    args.distortion = 1;
+    [xopt,yopt,res] = ADMM_CPT_solver(R,args);
+    rtn_next = R_next * xopt;
+    xopt_array(:,itr) = xopt;
+    rtns(itr) = rtn_next;
+end
+save('./res/Empirical_riskfree_reference_point_daily.mat','xopt_array','rtns');
+
+rtns = zeros(1000,1);
+xopt_array = zeros(48,1000);
+for itr = 1:1000
+    disp('large reference point')
+    itr
+    period = 250;
+    invest_idx = period + itr;
+
+    R = ret(invest_idx-period:invest_idx-1,:)./100;
+    R_next = ret(invest_idx,:)./100;
+    R = R(:,1:48);
+    R_next = R_next(1:48);
+
     args.lamda = 2.25;
     args.B = 0.00072;
     args.alpha = 0.88;
@@ -64,10 +89,10 @@ for itr = 1:1000
     itr
     period = 250;
     invest_idx = period + itr;
-    
+
     R = ret(invest_idx-period:invest_idx-1,:)./100;
     R_next = ret(invest_idx,:)./100;
-   
+
     R = R(:,1:48);
     R_next = R_next(1:48);
 
@@ -90,10 +115,10 @@ for itr = 1:1000
     itr
     period = 250;
     invest_idx = period + itr;
-    
+
     R = ret(invest_idx-period:invest_idx-1,:)./100;
     R_next = ret(invest_idx,:)./100;
-   
+
     R = R(:,1:48);
     R_next = R_next(1:48);
 
@@ -116,14 +141,14 @@ for itr = 1:1000
     itr
     period = 250;
     invest_idx = period + itr;
-    
+
     R = ret(invest_idx-period:invest_idx-1,:)./100;
     R_next = ret(invest_idx,:)./100;
-    
+
 
     R = R(:,1:48);
     R_next = R_next(1:48);
-    
+
     args.lamda = 2.25;
     args.B = 0;
     args.alpha = 0.88;
@@ -135,3 +160,28 @@ for itr = 1:1000
     rtns(itr) = rtn_next;
 end
 save('./res/Empirical_no_probability_distortion_daily.mat','xopt_array','rtns');
+
+rtns = zeros(1000,1);
+xopt_array = zeros(48,1000);
+for itr = 1:1000
+    disp('risk-free reference point')
+    itr
+    period = 250;
+    invest_idx = period + itr;
+    
+    R = ret(invest_idx-period:invest_idx-1,:)./100;
+    R_next = ret(invest_idx,:)./100;
+    R = R(:,1:48);
+    R_next = R_next(1:48);
+    
+    args.lamda = 2.25;
+    args.B = 0.000041;
+    args.alpha = 0.88;
+    args.max_iter = 1000;
+    args.distortion = 1;
+    [xopt,yopt,res] = ADMM_CPT_solver(R,args);
+    rtn_next = R_next * xopt;
+    xopt_array(:,itr) = xopt;
+    rtns(itr) = rtn_next;
+end
+save('./res/Empirical_riskfree_reference_point_daily.mat','xopt_array','rtns');

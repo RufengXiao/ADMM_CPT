@@ -33,10 +33,11 @@ def read_data(name):
     return res
 
 data1 = scio.loadmat(f'Empirical_benchmark_{suffix}.mat')
-data2 = scio.loadmat(f'Empirical_large_reference_point_{suffix}.mat')
-data3 = scio.loadmat(f'Empirical_no_risk_aversion_and_risk_seeking_{suffix}.mat')
-data4 = scio.loadmat(f'Empirical_no_loss_aversion_{suffix}.mat')
-data5 = scio.loadmat(f'Empirical_no_probability_distortion_{suffix}.mat')
+data2 = scio.loadmat(f'Empirical_riskfree_reference_point_{suffix}.mat')
+data3 = scio.loadmat(f'Empirical_large_reference_point_{suffix}.mat')
+data4 = scio.loadmat(f'Empirical_no_risk_aversion_and_risk_seeking_{suffix}.mat')
+data5 = scio.loadmat(f'Empirical_no_loss_aversion_{suffix}.mat')
+data6 = scio.loadmat(f'Empirical_no_probability_distortion_{suffix}.mat')
 
 mean_df = pd.read_csv('mean.csv')
 
@@ -45,10 +46,11 @@ mean_df = pd.read_csv('mean.csv')
 cum_rtns_data = {
     'equal':mean_df['mean'].values.reshape(-1).cumsum()/100,
     'benchmark':data1['rtns'].reshape(-1).cumsum(),
-    'large reference point':data2['rtns'].reshape(-1).cumsum(),
-    'no risk aversion and risk seeking':data3['rtns'].reshape(-1).cumsum(),
-    'no loss aversion':data4['rtns'].reshape(-1).cumsum(),
-    'no probability distortion':data5['rtns'].reshape(-1).cumsum(),
+    'risk-free reference point':data2['rtns'].reshape(-1).cumsum(), 
+    'large reference point':data3['rtns'].reshape(-1).cumsum(),
+    'no risk aversion and risk seeking':data4['rtns'].reshape(-1).cumsum(),
+    'no loss aversion':data5['rtns'].reshape(-1).cumsum(),
+    'no probability distortion':data6['rtns'].reshape(-1).cumsum(),
     }
 
 cum_rtns_df = pd.DataFrame(cum_rtns_data)
@@ -57,6 +59,7 @@ plt.figure(figsize=(15,6),dpi =200)
 # ax= fig.add_subplot(1,1,1)
 # cum_rtns_df.plot(ax = ax)
 plt.plot(dates,1+cum_rtns_data['benchmark'],label = 'benchmark',marker = 'o',markevery=10)
+plt.plot(dates,1+cum_rtns_data['risk-free reference point'],linestyle='--',label = 'risk-free reference point',marker = 's',markevery=10)
 plt.plot(dates,1+cum_rtns_data['large reference point'],linestyle='--',label = 'large reference point',marker = 's',markevery=10)
 plt.plot(dates,1+cum_rtns_data['no risk aversion and risk seeking'],linestyle='-.',label = 'no risk aversion and risk seeking',marker = 'v',markevery=10)
 plt.plot(dates,1+cum_rtns_data['no loss aversion'],linestyle=':',label = 'no loss aversion',marker = '*',markevery=10)
@@ -102,15 +105,21 @@ plt.title(r'Top 5 Average Weights for "benchmark"')
 plt.savefig(figpath+f'Top5AverageWeightsforbenchmark{suffix}.eps')
 plt.show()
 
-
 dist2 = top_five_average(data2['xopt_array'])
 plt.figure(figsize=(6,5),dpi =300)
 plt.pie(x=dist2,labels = Labels,autopct = '%1.2f%%',explode = [0,0,0,0.1,0.3,0])
+plt.title(r'Top 5 Average Weights for "risk-free reference point"')
+plt.savefig(figpath+f'Top5AverageWeightsforriskfreereferencepoint{suffix}.eps')
+plt.show()
+
+dist3 = top_five_average(data3['xopt_array'])
+plt.figure(figsize=(6,5),dpi =300)
+plt.pie(x=dist3,labels = Labels,autopct = '%1.2f%%',explode = [0,0,0,0.1,0.3,0])
 plt.title(r'Top 5 Average Weights for "large reference point"')
 plt.savefig(figpath+f'Top5AverageWeightsforlargereferencepoint{suffix}.eps')
 plt.show()
 
-dist3 = top_five_average(data3['xopt_array'])
+dist4 = top_five_average(data4['xopt_array'])
 plt.figure(figsize=(6,5),dpi =300)
 plt.pie(x=dist3,labels = Labels,autopct = '%1.2f%%',explode = [0,0,0,0.2,0.4,0])
 plt.title('Top 5 Average Weights for "no risk aversion and risk seeking"')
@@ -118,14 +127,14 @@ plt.savefig(figpath+f'Top5AverageWeightsfornoriskaversionandriskseeking{suffix}.
 plt.show()
 
 
-dist4 = top_five_average(data4['xopt_array'])
+dist5 = top_five_average(data5['xopt_array'])
 plt.figure(figsize=(6,5),dpi =300)
 plt.pie(x=dist4,labels = Labels,autopct = '%1.2f%%',explode = [0,0,0,0.2,0.4,0])
 plt.title(r'Top 5 Average Weights for "no loss aversion"')
 plt.savefig(figpath+f'Top5AverageWeightsfornolossaversion{suffix}.eps')
 plt.show()
 
-dist5 = top_five_average(data5['xopt_array'])
+dist6 = top_five_average(data6['xopt_array'])
 plt.figure(figsize=(6,5),dpi =300)
 plt.pie(x=dist5,labels = Labels,autopct = '%1.2f%%',explode = [0,0,0,0.2,0.3,0])
 plt.title(r'Top 5 Average Weights for "no probability distortion"')
@@ -166,7 +175,7 @@ var_array = average_std2(ret_df)
 cov_matrix_dict = covariance_matrix_gen(ret_df)
 
 portfolio_vars = {}
-for i in range(1,6):
+for i in range(1,7):
     portfolio_vars[i] = eval(f'portfolio_var(cov_matrix_dict,data{i})')
     
 def SSPW_calc(data):
@@ -183,17 +192,19 @@ def SSPW_calc(data):
     return res
         
 portfolio_sspws = {}
-for i in range(1,6):
+for i in range(1,7):
     portfolio_sspws[i] = eval(f'SSPW_calc(data{i})')
 
 def SSPW_plot(i):
     if i == 2:
-        name = 'large reference point'
+        name = 'risk-free reference point'
     elif i == 3:
-        name = 'no risk aversion and risk seeking'
+        name = 'large reference point'
     elif i == 4:
+        name = 'no risk aversion and risk seeking'
+    elif i == 5:
         name = 'no loss aversion'
-    elif i==5:
+    elif i==6:
         name = 'no probability distortion'
     
     cpt_sspw = portfolio_sspws[1]
@@ -208,7 +219,7 @@ def SSPW_plot(i):
     plt.show()
     
 
-for i in range(2,6):
+for i in range(2,7):
     SSPW_plot(i)
 
 # generate table
@@ -226,45 +237,32 @@ def cal_maxdd(array):
     return max(drawdowns)
 
 def cal_sharpe(array):
-    if suffix == 'daily':
-        coef = 1
-    elif suffix == '1w':
-        coef = 5
-    else:
-        coef = 10
+    coef = 1
     return np.sqrt(252/coef)*np.mean(array)/np.std(array)
 
 def cal_mean(array):
-    if suffix == 'daily':
-        coef = 1
-    elif suffix == '1w':
-        coef = 5
-    else:
-        coef = 10
+    coef = 1
     return (252/coef)*np.mean(array)
 
 def cal_std(array):
-    if suffix == 'daily':
-        coef = 1
-    elif suffix == '1w':
-        coef = 5
-    else:
-        coef = 10
+    coef = 1
     return np.sqrt(252/coef)*np.std(array)
 
 full_rtns_data = {
     'equal':mean_df['mean']/100,
     'benchmark':data1['rtns'].reshape(-1),
-    'large reference point':data2['rtns'].reshape(-1),
-    'no risk aversion and risk seeking':data3['rtns'].reshape(-1),
-    'no loss aversion':data4['rtns'].reshape(-1),
-    'no probability distortion':data5['rtns'].reshape(-1),
+    'risk-free reference point':data2['rtns'].reshape(-1),
+    'large reference point':data3['rtns'].reshape(-1),
+    'no risk aversion and risk seeking':data4['rtns'].reshape(-1),
+    'no loss aversion':data5['rtns'].reshape(-1),
+    'no probability distortion':data6['rtns'].reshape(-1),
     
     }
 full_rtns_df = pd.DataFrame(full_rtns_data)
 
 maxdd = {
     'benchmark':cal_maxdd(cum_rtns_data['benchmark']),
+    'risk-free reference point':cal_maxdd(cum_rtns_data['risk-free reference point']),
     'large reference point':cal_maxdd(cum_rtns_data['large reference point']),
     'no risk aversion and risk seeking':cal_maxdd(cum_rtns_data['no risk aversion and risk seeking']),
     'no loss aversion':cal_maxdd(cum_rtns_data['no loss aversion']),
@@ -274,6 +272,7 @@ maxdd = {
 
 sharpe = {
     'benchmark':cal_sharpe(full_rtns_data['benchmark']),
+    'risk-free reference point':cal_sharpe(full_rtns_data['risk-free reference point']),
     'large reference point':cal_sharpe(full_rtns_data['large reference point']),
     'no risk aversion and risk seeking':cal_sharpe(full_rtns_data['no risk aversion and risk seeking']),
     'no loss aversion':cal_sharpe(full_rtns_data['no loss aversion']),
@@ -283,6 +282,7 @@ sharpe = {
 
 mean = {
     'benchmark':cal_mean(full_rtns_data['benchmark']),
+    'risk-free reference point':cal_mean(full_rtns_data['risk-free reference point']),
     'large reference point':cal_mean(full_rtns_data['large reference point']),
     'no risk aversion and risk seeking':cal_mean(full_rtns_data['no risk aversion and risk seeking']),
     'no loss aversion':cal_mean(full_rtns_data['no loss aversion']),
@@ -292,6 +292,7 @@ mean = {
 
 std = {
     'benchmark':cal_std(full_rtns_data['benchmark']),
+    'risk-free reference point':cal_std(full_rtns_data['risk-free reference point']),
     'large reference point':cal_std(full_rtns_data['large reference point']),
     'no risk aversion and risk seeking':cal_std(full_rtns_data['no risk aversion and risk seeking']),
     'no loss aversion':cal_std(full_rtns_data['no loss aversion']),
@@ -304,6 +305,7 @@ stats = pd.DataFrame([maxdd,sharpe,mean,std],index = ['max drawdown','sharpe','m
 stats.to_excel(figpath+f'stats_{suffix}.xlsx')
 
 print(f' &benchmark& {round(stats["benchmark"]["mean"],4)} &{round(stats["benchmark"]["std"],4)}&{round(stats["benchmark"]["sharpe"],4)} &{round(stats["benchmark"]["max drawdown"],4)}   \\\\')
+print(f' &risk-free reference point& {round(stats["risk-free reference point"]["mean"],4)} &{round(stats["risk-free reference point"]["std"],4)}&{round(stats["risk-free reference point"]["sharpe"],4)} &{round(stats["risk-free reference point"]["max drawdown"],4)}   \\\\')
 print(f' &large reference point& {round(stats["large reference point"]["mean"],4)} &{round(stats["large reference point"]["std"],4)}&{round(stats["large reference point"]["sharpe"],4)} &{round(stats["large reference point"]["max drawdown"],4)}   \\\\')
 print(f' &no risk aversion and risk seeking& {round(stats["no risk aversion and risk seeking"]["mean"],4)} &{round(stats["no risk aversion and risk seeking"]["std"],4)}&{round(stats["no risk aversion and risk seeking"]["sharpe"],4)} &{round(stats["no risk aversion and risk seeking"]["max drawdown"],4)}   \\\\')
 print(f' &no loss aversion& {round(stats["no loss aversion"]["mean"],4)} &{round(stats["no loss aversion"]["std"],4)}&{round(stats["no loss aversion"]["sharpe"],4)} &{round(stats["no loss aversion"]["max drawdown"],4)}   \\\\')
