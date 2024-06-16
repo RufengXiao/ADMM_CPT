@@ -21,6 +21,17 @@ In order to run the comparison experiment properly, since its code is written in
 * To get the results of the section "Empirical Study" in our paper, please run `run5_4.m`. The results obtained will be stored in the `res` folder. Please transfer the five results from `Empirical_xxxx.mat` into the `plot` folder. Subsequently, executing `plot/plot_table.py` will generate the figure and table presented in Appendix D of our paper.
 
 ### Citation
-If you found the provided code useful, please cite our work.
+If you want to reference our paper in your research, please consider citing us by using the following BibTeX:
+
+```bib
+@misc{cui2024decision,
+      title={Decision Making under Cumulative Prospect Theory: An Alternating Direction Method of Multipliers}, 
+      author={Xiangyu Cui and Rujun Jiang and Yun Shi and Rufeng Xiao and Yifan Yan},
+      year={2024},
+      eprint={2210.02626},
+      archivePrefix={arXiv},
+      primaryClass={id='math.OC' full_name='Optimization and Control' is_active=True alt_name=None in_archive='math' is_general=False description='Operations research, linear programming, control theory, systems theory, optimal control, game theory'}
+}
+```
 
 If you have any questions, please contact us.
