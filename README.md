@@ -36,8 +36,6 @@ The goal of this software is to demonstrate the effectiveness of the ADMM method
 ## Code
 In order to run this software, you must install Gurobi 11.0.0 from https://www.gurobi.com/downloads/gurobi-software/. This code can be run in Matlab R2023b.
 
-In order to run the comparison experiment properly, since its code is written in Python, we recommend referring to `scripts/README.md`.
-
 This directory contains the folders `src`，`scripts`，`data` and `results`:
 * `src`: includes the source code of the paper. This folder is organized as follows:
   * `src/coefficients_generating.m`: the code for generating the weights $a_i$ and $b_i$ in the paper.
@@ -47,7 +45,7 @@ This directory contains the folders `src`，`scripts`，`data` and `results`:
   * `src/bisectionMethod.m`: the code for finding the root of a function by using binary search.
 * `results`: contains the raw results files.
 * `data`: contains the raw data files.
-* `scripts`: contains the scripts used to replicate the experiments in the paper. See the *Replicating* section below for details. `scripts/cptopt` contains the source code for the methods being compared in the paper. See `scripts/README.md` and scripts/setup.cfg` for the description of this folder.
+* `scripts`: contains the scripts used to replicate the experiments in the paper. See the *Replicating* section below for details. `scripts/cptopt` contains the source code for the methods being compared in the paper. See `scripts/README.md` and `scripts/setup.cfg` for the description of this folder.
 
 ## Results
 
