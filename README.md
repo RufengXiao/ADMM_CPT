@@ -38,11 +38,16 @@ In order to run this software, you must install Gurobi 11.0.0 from https://www.g
 
 In order to run the comparison experiment properly, since its code is written in Python, we recommend referring to `scripts/README.md`.
 
-* `src/coefficients_generating.m`: the code for generating the weights $a_i$ and $b_i$ in our paper.
-* `src/ADMM_CPT_solver.m`: the code for Algorithm 1 in our paper.
-* `src/dynamic_programming.m`: the code for Algorithm 2 and 3 in our paper.
-* `src/PAV_solver.m`,`src/PAV.m`,`src/find_minimizer.m`: the code for Algorithm 4 in our paper.
-* `src/bisectionMethod.m`: the code for finding the root of a function by using binary search.S
+This directory contains the folders `src`，`scripts`，`data` and `results`:
+* `src`: includes the source code of the paper. This folder is organized as follows:
+  * `src/coefficients_generating.m`: the code for generating the weights $a_i$ and $b_i$ in the paper.
+  * `src/ADMM_CPT_solver.m`: the code for Algorithm 1 in the paper.
+  * `src/dynamic_programming.m`: the code for Algorithm 2 and 3 in the paper.
+  * `src/PAV_solver.m`,`src/PAV.m`,`src/find_minimizer.m`: the code for Algorithm 4 in the paper.
+  * `src/bisectionMethod.m`: the code for finding the root of a function by using binary search.
+* `results`: contains the raw results files.
+* `data`: contains the raw data files.
+* `scripts`: contains the scripts used to replicate the experiments in the paper. See the *Replicating* section below for details. `scripts/cptopt` contains the source code for the methods being compared in the paper. See `scripts/README.md` and scripts/setup.cfg` for the description of this folder.
 
 ## Results
 
