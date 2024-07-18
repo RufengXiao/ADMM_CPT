@@ -4,31 +4,7 @@
 
 This archive is distributed in association with the [INFORMS Journal on Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
 
-The software and data in this repository are a snapshot of the software and data that were used in the research reported on in the paper [Decision Making under Cumulative Prospect Theory: An Alternating Direction Method of Multipliers](https://doi.org/10.1287/ijoc.2023.0243) by Xiangyu Cui, Rujun Jiang, Yun Shi, Rufeng Xiao and Yifan Yan.
-
-**Important: This code is being developed on an on-going basis at https://github.com/RufengXiao/ADMM_CPT. Please go there if you would like to get a more recent version or would like support**
-
-## Cite
-
-To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
-
-https://doi.org/10.1287/ijoc.2023.0243
-
-https://doi.org/10.1287/ijoc.2023.0243.cd
-
-Below is the BibTex for citing this snapshot of the repository.
-
-```
-@misc{cui2024decision,
-  author =        {Xiangyu Cui and Rujun Jiang and Yun Shi and Rufeng Xiao and Yifan Yan},
-  publisher =     {INFORMS Journal on Computing},
-  title =         {{Decision Making under Cumulative Prospect Theory: An Alternating Direction Method of Multipliers}}, 
-  year =          {2024},
-  doi =           {10.1287/ijoc.2023.0243.cd},
-  url =           {https://github.com/INFORMSJoC/2023.0243},
-  note =          {Available for download at https://github.com/INFORMSJoC/2023.0243},  
-}
-```
+The software and data in this repository are the implementation of the software and data that were used in the research reported on in the paper [Decision Making under Cumulative Prospect Theory: An Alternating Direction Method of Multipliers](https://doi.org/10.1287/ijoc.2023.0243) by Xiangyu Cui, Rujun Jiang, Yun Shi, Rufeng Xiao and Yifan Yan.
 
 ## Description
 The goal of this software is to demonstrate the effectiveness of the ADMM method proposed in this paper in the problem of decision making under cumulative prospect theory, as compared to other methods, as well as the effectiveness of the model when applied to empirical study.
@@ -58,6 +34,20 @@ The results are presented in the numerical experiments section of the paper.
 * To replicate the results in the section "Numerical Tests for Comparison with Luxenberg et al. (2024)" in the paper, please run `scripts/run5_3.m` and `scripts/run5_3.py`. The results obtained will be stored in the `results` folder.
 * To replicate the results in the section "Empirical Study" in the paper, please run `run5_4.m`. The results obtained will be stored in the `results` folder. Subsequently, executing `scripts/plot_table.py` will generate the figure and table presented in Appendix D of the paper. The results obtained will be stored in the `results/daily_pic` folder.
 
+## Citation
+If you want to reference our paper in your research, please consider citing us by using the following BibTeX:
+
+```bib
+@misc{cui2024decision,
+      title={Decision Making under Cumulative Prospect Theory: An Alternating Direction Method of Multipliers}, 
+      author={Xiangyu Cui and Rujun Jiang and Yun Shi and Rufeng Xiao and Yifan Yan},
+      year={2024},
+      eprint={2210.02626},
+      archivePrefix={arXiv},
+      primaryClass={id='math.OC' full_name='Optimization and Control' is_active=True alt_name=None in_archive='math' is_general=False description='Operations research, linear programming, control theory, systems theory, optimal control, game theory'}
+}
+```
+
 ## Support
 
-For support in using this software, submit an [issue](https://github.com/RufengXiao/ADMM_CPT/issues/new). This code is being developed on an on-going basis at the author's [Github page](https://github.com/RufengXiao/ADMM_CPT).
+For support in using this software, submit an [issue](https://github.com/RufengXiao/ADMM_CPT/issues/new).
