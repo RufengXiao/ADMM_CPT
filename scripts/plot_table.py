@@ -24,6 +24,9 @@ suffix = 'daily'
 figpath = f'./results/{suffix}_pic/'
 
 ret_df = pd.read_csv('./data/daily_used.csv')
+mean_df = pd.DataFrame(ret_df.iloc[250:, 1:49].mean(axis=1))
+mean_df.columns = ['mean']
+mean_df.reset_index(drop=True) 
 ret_df = ret_df/100
 dates = ret_df['date'].iloc[250:]
 dates = dates[:1000]
@@ -45,9 +48,6 @@ data3 = scio.loadmat(f'./results/Empirical_large_reference_point_{suffix}.mat')
 data4 = scio.loadmat(f'./results/Empirical_no_risk_aversion_and_risk_seeking_{suffix}.mat')
 data5 = scio.loadmat(f'./results/Empirical_no_loss_aversion_{suffix}.mat')
 data6 = scio.loadmat(f'./results/Empirical_no_probability_distortion_{suffix}.mat')
-
-mean_df = pd.read_csv('./data/mean.csv')
-
 
 # plot figure 1
 cum_rtns_data = {

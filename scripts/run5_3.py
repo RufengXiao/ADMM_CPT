@@ -12,6 +12,7 @@ from cptopt.optimizer import MinorizationMaximizationOptimizer, ConvexConcaveOpt
     MeanVarianceFrontierOptimizer, GradientOptimizer
 from cptopt.utility import CPTUtility
 import scipy.io as scio
+import pandas as pd
 
 # Define utility function
 utility = CPTUtility(
@@ -33,13 +34,11 @@ class Logger(object):
         pass
     
 
-for dataname in ["daily_used", "SP500_2"]: #"rand", "daily_used", "SP500_2"
+for dataname in ["daily_used", "SP500_2"]: 
     if dataname == "daily_used":
         periods = [50,100,150,200,250,300]
-    elif dataname == "SP500_2":
-        periods = [300,400,500,600,700,800,900,1000]
     else:
-        periods = [100]
+        periods = [300,400,500,600,700,800,900,1000]
     
     log_dir = "./log/"
     os.makedirs(log_dir, exist_ok=True)
@@ -57,11 +56,14 @@ for dataname in ["daily_used", "SP500_2"]: #"rand", "daily_used", "SP500_2"
 
     for period in periods:
         # load returns
-        dataname = dataname_pre + "_" + str(period)
-        filename = "./data/R_data/" + dataname + ".mat"
-        weightname = "./results/res_w/w_"+dataname + ".mat"
-        data = scio.loadmat(filename)
-        r = np.array(data['R']) 
+        weightname = "./results/res_w/w_"+dataname  + "_" + str(period)+ ".mat"
+        filename = "./data/" + dataname_pre + ".csv"
+        data = pd.read_csv(filename)
+        if dataname_pre == "daily_used":
+            r = np.array(data.iloc[0:period, 1:49])
+            r = r/100
+        else:
+            r = np.array(data.iloc[0:period, 1:459])
         data = scio.loadmat(weightname)
         weight = np.array(data['xopt']).reshape(-1)
         print(f"========      period={period}      ========")

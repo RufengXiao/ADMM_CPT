@@ -1,4 +1,18 @@
 function xopt = PAV_solver(an,bn,wn,args,sigma)
+    % PAV_SOLVER.M
+    % This function solves the y-subproblem using the Pool Adjacent Violators (PAV) algorithm which is the Algorithm 4 in the paper ``Decision Making under Cumulative Prospect Theory: An Alternating Direction Method of Multipliers''
+    % Inputs:
+    % an - Array of 'an' coefficients for the y-subproblem.
+    % bn - Array of 'bn' coefficients for the y-subproblem.
+    % wn - Array of \omega for the y-subproblem.
+    % sigma - \sigma in the y-subproblem.
+    % args.lambda: \mu in the model
+    % args.alpha: \alpha in the model
+    % args.B: reference point B in the model
+
+    % Outputs:
+    % xopt - Optimal solution for the y-subproblem
+
     if args.utility == 1
         if args.alpha == 1
             B = args.B;

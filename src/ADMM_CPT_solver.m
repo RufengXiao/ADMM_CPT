@@ -1,4 +1,49 @@
 function [xopt,yopt,res,itr,flag,res_srs,increase,xtime,ytime] = ADMM_CPT_solver(R,args)
+    % ADMM_CPT_SOLVER.M
+    % This function implements an Alternating Direction Method of Multipliers (ADMM) solver for CPT optimization problem 
+    % which corresponds to the Algorithm 1 in the paper ``Decision Making under Cumulative Prospect Theory: An Alternating Direction Method of Multipliers''
+    % Inputs:
+    % R - Return matrix
+    % args - A structure containing various parameters for the algorithm and models.
+    % model parameters:
+    % args.lambda: \mu in the model
+    % args.alpha: \alpha in the model
+    % args.B: reference point B in the model
+    % args.distortion: distortion function type in the model. 2 only in the section 5.3, 1 in other sections. 
+    % args.delta_neg: \delta in the model
+    % args.delta_pos: \gamma in the model
+    % args.utility: utility function type. 2 only for the section 5.3, 1 in other sections.
+    % algorithm parameters:
+    % args.max_iter: maximum number of iterations
+    % args.primal_tol: primal feasibility tolerance
+    % args.dual_tol: dual feasibility tolerance
+    % args.verbose: verbose flag
+    % args.method_num: method number for solving the y sub-problem. 1 for dynamic programming, 2 for PAV algorithm
+    % Outputs:
+    % xopt - Optimal weights
+    % yopt - Optimal dual variable
+    % res - Final objective value
+    % itr - Number of iterations
+    % flag - Convergence flag
+    % res_srs - Series of objective values per iteration
+    % increase - Number of improvements
+    % xtime - Time spent solving the x sub-problem
+    % ytime - Time spent solving the y sub-problem
+
+    % Begin main loop
+    % For each iteration, first solve the y sub-problem, then solve the x sub-problem
+    % Update the Lagrangian multipliers, compute primal and dual feasibility
+    % Adjust the sigma value based on primal and dual feasibility
+    % Check for convergence criteria, exit loop if met
+
+    % Solving the y sub-problem
+    % Calculate wn based on current x and Lagrangian multipliers
+    % Solve the y sub-problem using dynamic programming or PAV algorithm based on wn and given parameters
+
+    % Solving the x sub-problem
+    % Solve the x sub-problem using Gurobi optimizer
+    % Construct Gurobi model, set objective function and constraints
+
     [N,m] = size(R);
     Q = R'*R;
     x = 1/m*ones(m,1);

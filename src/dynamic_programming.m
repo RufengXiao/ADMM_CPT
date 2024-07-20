@@ -1,4 +1,18 @@
 function yopt = dynamic_programming(an_array,bn_array,wn_array,sigma,args)
+    % DYNAMIC_PROGRAMMING.M
+    % This function implements the dynamic programming algorithm for solving y-subproblem as described in Algorithms 2 and 3 of the paper ''Decision Making under Cumulative Prospect Theory: An Alternating Direction Method of Multipliers''.
+    % Inputs:
+    % an_array - Array of 'an' coefficients for the y-subproblem.
+    % bn_array - Array of 'bn' coefficients for the y-subproblem.
+    % wn_array - Array of \omega for the y-subproblem.
+    % sigma - \sigma in the y-subproblem.
+    % args.lambda: \mu in the model
+    % args.alpha: \alpha in the model
+    % args.B: reference point B in the model
+
+    % Outputs:
+    % yopt - The optimal solution to the y-subproblem.
+
     [~,N] = size(an_array);
     B = args.B;
     lb = min(min(wn_array),-10);

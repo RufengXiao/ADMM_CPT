@@ -1,4 +1,19 @@
 function x_mini = find_minimizer(alpha,func,grad1,grad2,hess1,B,C,lb,ub,utility)
+    % FIND_MINIMIZER.M
+    % This function finds the minimizer of the subproblem of the PAV algorithm which is the Algorithm 4 in the paper ``Decision Making under Cumulative Prospect Theory: An Alternating Direction Method of Multipliers''
+
+    % Inputs:
+    % alpha - \alpha in the model
+    % func - y-subproblem function.
+    % grad1, grad2 - Gradient functions of 'func'. grad1 is used when y <= B, grad2 is used when y > B.
+    % hess1 - Hessian function of 'func' when y <= B.
+    % B - Reference point B in the model.
+    % C - sigma = an hess1(C).
+    % lb, ub - Lower and upper bounds for the search of the minimizer.
+    % utility - utility function type. 2 only for the section 5.3, 1 in other sections.
+
+    % Outputs:
+    % x_mini - Optimal solution for the subproblem of the PAV algorithm
     if utility == 1
         if alpha == 1
             xs = [];

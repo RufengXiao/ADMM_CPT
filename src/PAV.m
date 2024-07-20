@@ -1,4 +1,22 @@
 function yopt = PAV(an,bn,wn,sigma,alpha,u1,u2,ugrad1,ugrad2,uhess1,B,findc,lb,ub,utility)
+    % PAV.M
+    % This function implements the Pool Adjacent Violators (PAV) algorithm for solving the y-subproblem in the paper ''Decision Making under Cumulative Prospect Theory: An Alternating Direction Method of Multipliers''.
+
+    % Inputs:
+    % an, bn, wn - Arrays containing coefficients for the y-subproblem.
+    % sigma - \sigma in the y-subproblem.
+    % alpha - \alpha in the model.
+    % u1, u2 - Utility functions for the y-subproblem. u1 is used when y <= B, u2 is used when y > B.
+    % ugrad1, ugrad2 - Gradient functions of u1 and u2.
+    % uhess1 - Hessian function of u1.
+    % B - Reference point B in the model.
+    % findc - find the c, s.t. sigma = an hess1(c).
+    % lb, ub - Lower and upper bounds for the solution.
+    % utility - utility function type. 2 only for the section 5.3, 1 in other sections.
+
+    % Outputs:
+    % yopt - Optimal solution for the y-subproblem
+
     [~,N] = size(an);
     
     pools = 1:N;

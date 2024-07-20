@@ -1,4 +1,19 @@
 function [an,bn] = coefficients_generating(N,distortion_num,delta_neg,delta_pos)
+    % COEFFICIENTS_GENERATING.M
+    % This function generates coefficients 'an' and 'bn' for use in the models in the paper ''Decision Making under Cumulative Prospect Theory: An Alternating Direction Method of Multipliers''.
+    % Inputs:
+    % N - The number of coefficients to generate.
+    % distortion_num - Selector for the distortion function to be used.
+    % delta_neg - Parameter for the distortion function affecting 'an' coefficients.
+    % delta_pos - Parameter for the distortion function affecting 'bn' coefficients.
+
+    % The function supports two types of distortion functions, selected by 'distortion_num'.
+    % distortion_num = 2: the setting in section 5.3 of the paper
+    % distortion_num = 1: the setting in other sections of the paper
+
+    % Outputs:
+    % an - Array of 'an' coefficients.
+    % bn - Array of 'bn' coefficients.
     if distortion_num == 1
         an = zeros(1,N);
         bn = zeros(1,N);
